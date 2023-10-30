@@ -79,9 +79,6 @@ const Navbar = () => {
           <li>
             <Link to="/signin">Login</Link>
           </li>
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
         </>
       )}
     </>
@@ -93,7 +90,7 @@ const Navbar = () => {
         <img className="w-20" src={logo} alt="logo" />
       </div>
       <div
-        className={`navbar top-0 transition-all ease-out duration-300 dark:bg-gray-800 text-white md:fixed z-50 py-3 md:px-8 ${
+        className={`navbar top-0 transition-all ease-out duration-300  text-white md:fixed z-50 py-3 md:px-8 ${
           navbarBg !== "transparent" ? "navbar_bg" : "lg:py-4 py-5"
         }`}
       >

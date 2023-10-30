@@ -3,7 +3,7 @@ import { useTypewriter,Cursor } from 'react-simple-typewriter';
 
 const TypingEffect = () => {
     const [texts] = useTypewriter({
-        words:['Football','Cricket','Tennis','Badminton','Rugby','Baseball','Basketball','Swimming'],
+        words:['Football','Cricket','Tennis','Badminton','Rugby','Baseball','Basketball','Swimming','Volleyball'],
         loop:{},
         typeSpeed:300,
         delaySpeed:80

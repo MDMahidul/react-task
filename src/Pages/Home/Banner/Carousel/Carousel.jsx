@@ -81,6 +81,13 @@ const Carousel = () => {
                 alt="swimming"
               />
             </SwiperSlide>
+            <SwiperSlide>
+              <img
+                loading="lazy"
+                src="https://i.ibb.co/w051W72/beach-volleyball-6483905-1280-1.webp"
+                alt="volleyball"
+              />
+            </SwiperSlide>
           </Swiper>
         </div>
       </>
