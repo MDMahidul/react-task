@@ -13,17 +13,17 @@ const Navbar = () => {
     const [navbarBg,setNavbarBg] = useState('transparent');
 
     /* control navbar bg */
-    useEffect(()=>{
-        const handleScroll = ()=>{
-            setNavbarBg(window.pageYOffset>120 ? 'solid' : 'transparent');
-        }
-        
-        window.addEventListener('scroll',handleScroll);
+      useEffect(() => {
+        const handleScroll = () => {
+          setNavbarBg(window.pageYOffset > 120 ? "solid" : "transparent");
+        };
 
-        return ()=>{
-            window.removeEventListener('scroll',handleScroll);
-        }
-    },[])
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
 
     /* control dark mode and save data to local storage */
     useEffect(()=>{
@@ -32,7 +32,7 @@ const Navbar = () => {
         }else{
             document.documentElement.classList.remove('dark');
         }
-
+        /* store data to local storage */
         localStorage.setItem('theme',theme);
     },[theme])
 
@@ -94,7 +94,7 @@ const Navbar = () => {
         </div>
         <div
           className={`navbar top-0 transition-all ease-out duration-300 dark:bg-gray-800 text-white md:fixed z-50 py-3 md:px-8 ${
-            navOptions !== "transparent" ? "navbar_bg" : "lg:py-4 py-5"
+            navbarBg !== "transparent" ? "navbar_bg" : "lg:py-4 py-5"
           }`}
         >
           <div className="navbar-start">
@@ -120,7 +120,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-500 drak:bg-gray-700 rounded-box w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-500 dark:bg-gray-700 rounded-box w-52"
               >
                 {navOptions}
               </ul>
