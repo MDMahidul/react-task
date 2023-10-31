@@ -21,7 +21,6 @@ const SportsProgrammes = () => {
     setShowAllProgrammes(true);
   }
 
-
   return (
     <div className="dark:bg-gray-800 pb:10 md:pb-20" id="programmes">
       <Container>
