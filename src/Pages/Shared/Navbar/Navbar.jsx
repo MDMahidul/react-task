@@ -8,6 +8,7 @@ import useReadingProgress from "../../../Hooks/useReadingProgress";
 
 const Navbar = () => {
   const user = null;
+  const [activeNav, setActiveNav] = useState("#home");
   const completion = useReadingProgress();
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const [navbarBg, setNavbarBg] = useState("transparent");
@@ -39,22 +40,58 @@ const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <a
+          href="#home"
+          className={activeNav === "#home" ? " active_link" : ""}
+          onClick={() => setActiveNav("#home")}
+        >
+          Home
+        </a>
       </li>
       <li>
-        <a href="#programmes">Sports</a>
+        <a
+          href="#programmes"
+          className={activeNav === "#programmes" ? " active_link" : ""}
+          onClick={() => setActiveNav("#programmes")}
+        >
+          Sports
+        </a>
       </li>
       <li>
-        <a href="#facilities">Facilities</a>
+        <a
+          href="#facilities"
+          className={activeNav === "#facilities" ? " active_link" : ""}
+          onClick={() => setActiveNav("#facilities")}
+        >
+          Facilities
+        </a>
       </li>
       <li>
-        <a href="#instructors">Instructors</a>
+        <a
+          href="#instructors"
+          className={activeNav === "#instructors" ? " active_link" : ""}
+          onClick={() => setActiveNav("#instructors")}
+        >
+          Instructors
+        </a>
       </li>
       <li>
-        <a href="#aboutus">About Us</a>
+        <a
+          href="#aboutus"
+          className={activeNav === "#aboutus" ? " active_link" : ""}
+          onClick={() => setActiveNav("#aboutus")}
+        >
+          About Us
+        </a>
       </li>
       <li>
-        <a href="#contactus">Contact Us</a>
+        <a
+          href="#contactus"
+          className={activeNav === "#contactus" ? " active_link" : ""}
+          onClick={() => setActiveNav("#contactus")}
+        >
+          Contact Us
+        </a>
       </li>
       {/* if user logged then show this nav items */}
       {user ? (

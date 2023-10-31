@@ -5,10 +5,10 @@ import Carousel from '../Carousel/Carousel';
 const Banner = () => {
     return (
       <>
-        <div
+        <div id='home'
           className="hero min-h-screen !px-0"
           style={{
-            backgroundImage: "url(https://i.ibb.co/P4mH9qT/banner.webp)",
+            backgroundImage: "url(https://i.ibb.co/P4mH9qT/banner.webp)",loading:"lazy"
           }}
         >
             <div className='hero-overlay bg-opacity-60 dark:bg-opacity-80'></div>

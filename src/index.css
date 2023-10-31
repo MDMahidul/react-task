@@ -18,4 +18,7 @@
     .facilities_card_overlay{
         @apply absolute inset-0 bg-gradient-to-t from-black to-transparent;
     }
+    .active_link{
+        @apply text-amber-500 border-b-2 rounded-none border-b-amber-500;
+    }
 }

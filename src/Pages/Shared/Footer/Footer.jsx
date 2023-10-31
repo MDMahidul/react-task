@@ -17,10 +17,10 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div>
-      <footer className="footer  py-14 px-10 bg-gray-700 dark:bg-gray-900 text-base-content">
+      <footer className="footer  py-14 px-10 bg-gray-800 dark:bg-gray-900 text-base-content">
         <aside>
           <img loading="lazy" className="w-36 md:w-44" src={logo} />
-          <p className="-mt-3 text-base font-semibold">
+          <p className="-mt-3 ps-3.5 text-sm font-semibold text-slate-300 dark:text-white">
             Let's Conquer Together
           </p>
           <div className="flex justify-center space-x-4 mt-5 py-4">
@@ -95,16 +95,16 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input input-bordered w-full "
+                className="input input-bordered w-full bg-white"
               />
-              <button className="btn bg-amber-500 hover:bg-amber-600 text-white absolute top-0 right-0 rounded-l-none">
+              <button className="btn bg-amber-500 hover:bg-amber-600 text-white absolute top-0 right-0 rounded-l-none border-2 border-amber-500 hover:border-amber-600 ">
                 Subscribe
               </button>
             </div>
           </fieldset>
         </form>
       </footer>
-      <div className="footer-center p-6 bg-gray-700 dark:bg-gray-900 text-base-content border-t border-slate-500">
+      <div className="footer-center p-6 bg-gray-800 dark:bg-gray-900 text-slate-300 border-t border-slate-500 text-sm">
         <p>Copyright © {year} - All right reserved</p>
       </div>
     </div>
