@@ -39,7 +39,7 @@ const Navbar = () => {
   const navOptions = (
     <>
       <li>
-        <Link to="#">Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <a href="#programmes">Sports</a>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <a href="#facilities">Facilities</a>
       </li>
       <li>
-        <Link to="#">Instructors</Link>
+        <a href="#instructors">Instructors</a>
       </li>
       <li>
         <Link to="#">About Us</Link>

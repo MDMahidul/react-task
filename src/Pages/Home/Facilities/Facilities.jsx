@@ -21,7 +21,7 @@ const Facilities = () => {
 
 
     return (
-      <div className="dark:bg-gray-800 bg-amber-300 pb-10 lg:pb-20" id='facilities'>
+      <div className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20" id='facilities'>
         <SectionHeader heading={"Our Academy Facilities"}></SectionHeader>
         <Container>
           <div className="-m-1 lg:flex lg:flex-wrap  md:-m-2">
