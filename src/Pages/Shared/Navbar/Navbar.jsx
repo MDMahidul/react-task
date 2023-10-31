@@ -175,7 +175,7 @@ const Navbar = () => {
         </div>
         <span
           className="absolute bg-gradient-to-r from-red-500 via-yellow-500 to-transparent h-1 w-full bottom-0"
-          style={{ transform: `translateX(${completion - 100}%)` }}
+          style={{ transform: `translateX(${completion - 101}%)` }}
         ></span>
       </div>
     </>
