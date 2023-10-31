@@ -51,10 +51,10 @@ const Navbar = () => {
         <a href="#instructors">Instructors</a>
       </li>
       <li>
-        <Link to="#">About Us</Link>
+        <a href="#aboutus">About Us</a>
       </li>
       <li>
-        <Link to="#">Contact Us</Link>
+        <a href="#contactus">Contact Us</a>
       </li>
       {/* if user logged then show this nav items */}
       {user ? (
