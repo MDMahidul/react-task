@@ -89,11 +89,11 @@ const Navbar = () => {
   return (
     <>
       {/* for small display */}
-      <div className="md:hidden bg-red-500 flex justify-center items-center py-2">
+      <div className="lg:hidden bg-red-500 flex justify-center items-center py-2">
         <img className="w-20" src={logo} alt="logo" />
       </div>
       <div
-        className={`navbar top-0 transition-all ease-out duration-300  text-white md:fixed z-50 py-3 md:px-8 ${
+        className={`navbar top-0 transition-all ease-out duration-300  text-white lg:fixed z-50 py-3 md:px-8 ${
           navbarBg !== "transparent" ? "navbar_bg" : "lg:py-4 py-5"
         }`}
       >
@@ -147,7 +147,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="flex justify-center relative w-fit items-center rounded-full">
             <button
-              className="toggle_class text-white dark:text-white"
+              className="toggle_class text-white dark:lg:text-white dark:text-red-500"
               onClick={() => setTheme("light")}
             >
               <FiMoon className="relative z-10 text-lg md:text-sm" />
@@ -157,12 +157,12 @@ const Navbar = () => {
               className={`toggle_class dark:text-white ${
                 navbarBg !== "transparent"
                   ? "text-red-500"
-                  : "text-red-500 md:text-white"
+                  : "text-red-500 lg:text-white"
               }`}
               onClick={() => setTheme("dark")}
             >
               <FiSun className="relative z-10 text-lg md:text-sm" />
-              <span className="relative z-10 hidden md:block">Dark</span>
+              <span className="relative z-10 hidden md:block ">Dark</span>
             </button>
             <div className="absolute inset-0 z-0 flex dark:justify-end justify-start">
               <motion.span

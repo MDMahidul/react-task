@@ -13,7 +13,7 @@ const Facilities = () => {
         opacity: 1,
         y: 0,
         transition: {
-          delay: custom + 0.07, // Apply different delays for each element
+          delay: custom + 0.07, 
           duration: 0.5,
         },
       }),
@@ -21,7 +21,10 @@ const Facilities = () => {
 
 
     return (
-      <div className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20" id='facilities'>
+      <div
+        className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20"
+        id="facilities"
+      >
         <SectionHeader heading={"Our Academy Facilities"}></SectionHeader>
         <Container>
           <div className="-m-1 lg:flex lg:flex-wrap  md:-m-2">
@@ -42,7 +45,7 @@ const Facilities = () => {
                     src="https://www.originpools.co.uk/images/2022/11/28/indoor-swimming-pool.webp"
                   />
                   <div className="facilities_card_overlay"></div>
-                  <div className="absolute inset-0 text-white p-3 top-2/4">
+                  <div className="absolute inset-0 text-white p-3 top-2/4 md:top-3/4 lg:top-2/4">
                     <h4 className="text-xl font-semibold">Swimming Complex</h4>
                     <p>Indoor & Outdoor Swimming Pools</p>
                   </div>
@@ -58,7 +61,7 @@ const Facilities = () => {
                     src="https://www.mpsuk.net/wp-content/uploads/2022/01/school-sico-canteens.jpg"
                   />
                   <div className="facilities_card_overlay"></div>
-                  <div className="absolute inset-0 text-white p-3 top-2/4">
+                  <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">
                     <h4 className="text-xl font-semibold">Canteen</h4>
                     <p>Healthy Food Canteen</p>
                   </div>
@@ -84,7 +87,7 @@ const Facilities = () => {
               className="lg:flex lg:w-1/2 lg:flex-wrap"
               variants={fadeInAnimation}
               initial="initial"
-              custom={.15}
+              custom={0.15}
               whileInView="animate"
               viewport={{ once: true }}
             >
@@ -112,7 +115,7 @@ const Facilities = () => {
                     src="https://levelfyc.com/wp-content/uploads/2021/09/lou-3803.jpg"
                   />
                   <div className="facilities_card_overlay"></div>
-                  <div className="absolute inset-0 text-white p-3 top-2/4">
+                  <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">
                     <h4 className="text-xl font-semibold">Modern Gym</h4>
                     <p>With Professional Trainer</p>
                   </div>
@@ -127,7 +130,7 @@ const Facilities = () => {
                     src="https://d2t6o06vr3cm40.cloudfront.net/2023/03/26/14/38/56/a1e14176-541b-4e92-bb37-44ede9180dc3/DSC04355.jpg"
                   />
                   <div className="facilities_card_overlay"></div>
-                  <div className="absolute inset-0 text-white p-3 top-2/4">
+                  <div className="absolute inset-0 text-white p-3 top-2/4 lg:top-2/4 md:top-3/4">
                     <h4 className="text-xl font-semibold">Player Recovery</h4>
                     <p>To Become More Productive</p>
                   </div>
