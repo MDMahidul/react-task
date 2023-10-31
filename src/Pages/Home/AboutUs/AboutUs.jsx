@@ -17,14 +17,14 @@ const AboutUs = () => {
               <div className="flex flex-col lg:flex-row-reverse justify-center items-center gap-10">
                 <div className="">
                   <img
-                    className="md:max-w-md max-w-sm rounded-xl"
+                    className="md:max-w-md max-w-sm rounded-xl" loading='lazy'
                     src="https://www.rheinzink.com/fileadmin/_processed_/a/0/csm_109-1919-001_A2_ret_ca3b9094c7.jpg"
                     alt=""
                   />
                 </div>
                 <div>
                   <div className="flex justify-center items-start mb-2">
-                    <img className="w-48" src={logo} alt="" />
+                    <img className="w-48" src={logo} alt="logo" loading='lazy'/>
                   </div>
                   <p className="dark:text-white text-slate-700">
                     Welcome to{" "}
@@ -54,7 +54,7 @@ const AboutUs = () => {
               <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
                 <div>
                   <img
-                    className="md:max-w-md max-w-sm rounded-xl mx-auto"
+                    className="md:max-w-md max-w-sm rounded-xl mx-auto" loading='lazy'
                     src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&q=80&w=1429&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
                   />

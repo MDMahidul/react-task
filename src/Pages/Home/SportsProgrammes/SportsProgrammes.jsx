@@ -37,7 +37,7 @@ const SportsProgrammes = () => {
           <div className="text-center">
             {!showAllProgrammes && (
               <button
-                className="btn bg-amber-500 hover:bg-amber-600 my-8 text-white border-0 transition-transform transform hover:scale-95"
+                className="btn bg-amber-500 hover:bg-amber-600 mt-8 text-white border-0 transition-transform transform hover:scale-95"
                 onClick={handleSeeMore}
               >
                 See More

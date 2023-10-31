@@ -19,7 +19,6 @@ const Facilities = () => {
       }),
     };
 
-
     return (
       <div
         className="dark:bg-gray-700 bg-amber-300 pb-10 lg:pb-20"

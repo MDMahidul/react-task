@@ -4,6 +4,7 @@ import SportsProgrammes from '../SportsProgrammes/SportsProgrammes';
 import Facilities from '../Facilities/Facilities';
 import Instructors from '../Instructors/Instructors';
 import AboutUs from '../AboutUs/AboutUs';
+import ScrollUp from '../../../Components/ScrollUp/ScrollUp';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Facilities/>
             <Instructors/>
             <AboutUs/>
+            <ScrollUp/>
         </div>
     );
 };
